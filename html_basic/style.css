@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14;
+    line-height: 1.6em;
+}
+.search-engine {
+    text-align: left;
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.search-engine img {
+    width: 100px;
+    margin: 15px;
+}
+figure.desk_ficture {
+    text-align: center;
+    margin-top: 100px;  
+    width: 600px;  
+    margin: 30px auto;
+    padding: 50px;
+
+}
