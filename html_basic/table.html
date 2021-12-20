@@ -1,33 +1,103 @@
 <!-- 테이블 만들기 -->
-<div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 700px;
+            border-collapse: collapse;
+
+        }
+
+        table td,
+        table td {
+            text-align: center;
+            padding: 5px;
+            font-size: 10px;
+            border: 1px solid lightgray;
+        }
+        table th {
+            background-color: dodgerblue;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
     <table border="1">
         <tr>
-            <td colspan="3">test table</td>
+            <td rowspan="2">인터넷 종류</td>
+            <td rowspan='2'>할인상품</td>
+            <td colspan="6">모바일 요금 총액에 따른 할인 금액</td>
         </tr>
         <tr>
-            <td colspan="3">JavaScript</td>
+            <td>22,000원 미만</td>
+            <td>22,000원 이상</td>
+            <td>64,900원 이상</td>
+            <td>108,900원 이상</td>
+            <td>141,900원 이상</td>
+            <td>174,900원 이상</td>
         </tr>
         <tr>
-            <td colspan="3">css</td>
+            <td rowspan="3">10GiGA 인터넷, GiGA 인터넷</td>
+            <td>총 할인금액</td>
+            <td>2,200원 할인</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
         </tr>
         <tr>
-            <td colspan="3">html</td>
+            <td>인터넷 할인</td>
+            <td>2,200원 할인</td>
+            <td colspan="5"></td>
+            
         </tr>
         <tr>
-            <td colspan="3">Jqurey</td>
+            <td>모바일 할인</td>
+            <td>-</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
         </tr>
         <tr>
-            <td rowspan="3">1</td>
-            <td>1</td>
-            <td>1</td>
+            <td rowspan="3">인터넷 최대 100M</td>
+            <td>총 할인금액</td>
+            <td>1,650원 할인</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>1</td>
+            <td>인터넷 할인</td>
+            <td>1,650원 할인</td>
+            <td>4</td>
+            <td colspan="5"></td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>1</td>
+            <td>모바일 할인</td>
+            <td>-</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
         </tr>
+     
+
     </table>
-</div>
+</body>
+
+</html>
+<div>
