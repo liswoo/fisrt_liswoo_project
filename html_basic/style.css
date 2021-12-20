@@ -25,5 +25,14 @@ figure.desk_ficture {
     width: 600px;  
     margin: 30px auto;
     padding: 50px;
+}
+nav {
+    text-align: center;
+    font-size: 14;
+    margin-bottom: 100px;
 
+}
+nav a {
+    background-color: cornflowerblue;
+    color: darkorange;
 }

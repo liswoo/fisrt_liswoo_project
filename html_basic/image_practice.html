@@ -12,23 +12,56 @@
 
 
 <body>
-
+    <!-- target _blank = 새창에서 띄우기 -->
     <div class="search-engine">
         <a href="http://127.0.0.1:5500/html_basic/image_practice.html" target="_blank"> <img
                 src="/images/datausLogo.png" title="logo"></a>
     </div>
+    <!-- tag 뒤에 id 설정 후, 링크를 #id로 받으면 anchor 작동 -->
     <nav>
-        <a href="">Tech 전문기업</a>
-        <a href="">새로운 고객가치</a>
-        <a href="">DataOps 컨설팅</a>
-        <a href="">설계 및 컨설팅</a>
-        <a href="">BPR/ISP 컨설팅</a>
+        <a href="#sub_1">Tech 전문기업</a>
+        <a href="#sub_2">새로운 고객가치</a>
+        <a href="#sub_3">DataOps 컨설팅</a>
+        <a href="#sub_4">설계 및 컨설팅</a>
+        <a href="#sub_5">BPR/ISP 컨설팅</a>
     </nav>
-
+    <!-- 테이블 만들기 -->
+    <div>
+        <table border="1">
+            <tr>
+                <td colspan="3">test table</td>
+            </tr>
+            <tr>
+                <td colspan="3">JavaScript</td>
+            </tr>
+            <tr>
+                <td colspan="3">css</td>
+            </tr>
+            <tr>
+                <td colspan="3">html</td>
+            </tr>
+            <tr>
+                <td colspan="3">Jqurey</td>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
     <figure>
         <img src="/images/hero-img.png" height="400px">
         <figcaption>
-            <h3>Tech 전문기업</h3>
+            <h3 id="sub_1">Tech 전문기업</h3>
             <p>(주) 데이터스는 데이터를 기반으로 고객의 성공을 지원하고 국내 IT업계를 이끌어가는 데이터/클라우드 기술 전문기업입니다. </p>
         </figcaption>
     </figure>
@@ -36,7 +69,7 @@
     <br>
     <figure>
         <figcaption>
-            <h3>끊임없는 변화와 혁신을 통해 IT기술과 데이터를 융합하여 새로운 고객가치를 만드는 기업</h3>
+            <h3 id="sub_2">끊임없는 변화와 혁신을 통해 IT기술과 데이터를 융합하여 새로운 고객가치를 만드는 기업</h3>
             <P>
                 끊임없는 변화와 혁신을 통해 IT기술과 데이터를 융합하여 새로운 고객가치를 만드는 기업
                 데이터스는 2020년 설립된 신생회사입니다. IT서비스를 통해 대한민국 IT산업이 나가야할 새로운 방향을 제시하여 고객의 서비스가치를 극대화할 수 있도록 기여하겠습니다.
@@ -47,7 +80,7 @@
     <br>
     <figure>
         <figcaption>
-            <h3>DataOps 컨설팅</h3>
+            <h3 id="sub_3">DataOps 컨설팅</h3>
             <p>람다아키텍처, HyBridDW, 오픈소스 기반 제품 컨설팅</p>
         </figcaption>
     </figure>
@@ -55,7 +88,7 @@
     <br>
     <figure>
         <figcaption>
-            <h3>클라우드 아키텍처 설계 및 컨설팅</h3>
+            <h3 id="sub_4">클라우드 아키텍처 설계 및 컨설팅</h3>
             <p>람다아키텍처, HyBridDW, 오픈소스 기반 제품 컨설팅</p>
         </figcaption>
     </figure>
@@ -63,41 +96,41 @@
     <br>
     <figure>
         <figcaption>
-            <h3>전자정부프레임워크 기반 컨설팅</h3>
+            <h3 id="sub_5">전자정부프레임워크 기반 컨설팅</h3>
             <p>람다아키텍처, HyBridDW, 오픈소스 기반 제품 컨설팅</p>
         </figcaption>
     </figure>
     <br>
     <br>
     <figure>
-      <figcaption>
+        <figcaption>
             <h3>BPR/ISP 컨설팅</h3>
             <p>공공/민간 BRP/ISP 컨설팅</p>
-      </figcaption>
+        </figcaption>
     </figure>
     <br>
     <br>
-   <figure>
+    <figure>
         <figcaption>
             <h3>service</h3>
             <p>주요 사업영역은 컨설팅과 ITO 입니다.</p>
         </figcaption>
-   </figure>
-   <br>
-   <br>
+    </figure>
+    <br>
+    <br>
     <figure>
-       <figcaption>
+        <figcaption>
             <h4>컨설팅 및 구축</h4>
             <p>
                 데이터 관리 컨설팅은 실무 Business 영역의 데이터 생성/활용에서부터 경영진의 의사결정 영역의 데이터 분석 등 전사 데이터 관리 전략을 수립하고, 데이터 품질 확보를 위한 IT
                 인프라 구축(MDM/DQM/ODM) 관련 제반 컨설팅 서비스를 의미합니다.
             </p>
-       </figcaption>
+        </figcaption>
     </figure>
     <br>
     <br>
     <figure>
-       <figcaption>
+        <figcaption>
             <h4>ITO (IT Outsourcing)</h4>
             <p>
                 시스템통합(SI) : 웹서비스통합, 유무선 통합, 멀티 채널 통합 서비스 제공
@@ -107,7 +140,7 @@
                 품질계획 및 관리 : ISO 9001기반 표준 품질관리계획 및 표준화 관리방법론 적용
                 정보보호 : ISO 27001기반 표준 정보보호 정책 적용
             </p>
-       </figcaption>
+        </figcaption>
     </figure>
 
 </body>
