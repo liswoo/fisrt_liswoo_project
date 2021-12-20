@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="/images/soccer-banner.png" usemap="#video">   
-    <map name=""
+    <!-- 이미지 내부에서 특정 좌표의 사각형과 원으로 링크를 걸 수 있다. 사각형 : 왼쪽상단, 오른쪽 하단 xy 좌표. 원 : 원의 중앙 xy좌표, 반지름 * 그림판 이용하여 좌표값 얻기 -->
+    <!-- https://www.image-map.net/ 를 이용하여 간편하게 구할 수 도 있다. -->
+    <img src="/images/promotion-banner.jpg" usemap="#down">   
+    <map name="down">
+        <area shape="rect" coords="285,875,515,937" href="" title="">
+        <area shape="circle" coords="675,434,39" href="" title="">
+    </map>
 </body>
 </html>
