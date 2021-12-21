@@ -8,7 +8,7 @@ body {
     font-size: 14;
     line-height: 1.6em;
 }
-.search-engine {
+div.search-engine {
     text-align: left;
     margin-top: 10px;
     height: 80px;
@@ -36,3 +36,7 @@ nav a {
     background-color: cornflowerblue;
     color: darkorange;
 }
+a {
+    text-decoration: none;
+}
+/* 링크 밑줄 제거 */
