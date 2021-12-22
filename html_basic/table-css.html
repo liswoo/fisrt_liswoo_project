@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            /* 셀 한줄로 표시 */
+            table-layout: fixed;
+            /* 일정한 표 간격 */
+
+        }
+        td, th {
+            border-bottom: 1px solid lightgrey;
+            text-align: center;
+            padding: 3px;
+        }
+        th {
+            background-color: lightgrey;
+            color: white;
+        }
+        .two_table {
+            caption-side: top;
+            
+        }
+        .two_table tr th {
+            background-color: black;
+            color: white;
+        }
+        .two_table tr .two_col {
+            font-size: small;
+            text-align: center;
+        }
+        table caption {
+            margin-bottom: 10px;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 첫번째 테이블 -->
+    <table>
+        <tr>
+            <th>Room name</th>
+            <th>Hours of use</th>
+            <th>fee</th>
+        </tr>
+        <tr>
+            <td>Standard room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Family room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Party room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Couples room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$250</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <!-- 두번째 테이블 -->
+    <table class="two_table">
+        <caption>
+            Clean Topia male medical pricing
+        </caption>
+        <tr>
+            <th>Room name</th>
+            <th>Hours of use</th>
+            <th>fee</th>
+        </tr>
+        <tr>
+            <td>Standard room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Family room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Party room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Couples room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$250</td>
+        </tr>
+        <tr>
+            <td>Couples room</td>
+            <td>2:00pm~10:00am</td>
+            <td>$250</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="two_col">Cleanupia Customer Care Center:080-888-8888 / Hours:9:00 am to 6:00 pm</td>
+            
+        </tr>
+    </table>
+</body>
+
+</html>

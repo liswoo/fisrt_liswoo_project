@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,42 @@
     <title>background-color</title>
     <style>
         body {
-            background-color: rgba(190, 245, 188,0.5);
+            margin: 0px;
+
         }
-        div {
+        /* 기본적으로 body에는 margin이 붙어있다. body 아래 div를 100%로 하는 경우에 , body가 가장 끝자락으로 밀려 마진이 적용되기 때문에 여백이 생긴다. */
+        /* 이떄, body 자체 마진을 0으로 해주어야 이 문제가 해결된다. 이렇듯 css에 default값으로 설정되어있는 부분을 초기화 하려고 css reset을 받아 사용하기도 한다. */
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
+        }
+
+        .non {
             border: 1px solid blue;
             height: 700px;
             width: 700px;
-            background-image: url(/images/background-image.jpg);
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
             background-repeat: no-repeat;
             background-size: cover;
             /* 기본적으로 repeat 상태이기 때문에, no-repeat 상태로 만들어 놓고, size를 cover로 둔다. */
         }
+
+        .non {}
+
+        div h1 {
+            margin: 0;
+        }
     </style>
 </head>
-<body>
-    <div>
 
+<body>
+    <div class="container">
+        <div>
+            <h1>gradient-background practice</h1>
+        </div>
     </div>
 </body>
+
 </html>
