@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        .container {
+            width: 1200px;
+            border: 1px solid black;
+            margin: auto;
+        }
+
+        header {
+            border: 1px solid red;
+            height: 150px;
+            line-height: 150px;
+            /* line-height를 높이만큼 주면, 컨텐츠가 중앙에 온다. */
+            text-align: center;
+
+        }
+
+        .inner section {
+            border: 1px solid black;
+            padding: 20px;
+            height: 400px;
+            width: 400px;
+            float: left;
+            box-sizing: border-box;
+           
+        }
+    
+
+        .footer {
+            border: 2px solid orange;
+            height: 100px;
+            clear: both;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="header">Header</div>
+        <header>Header</header>
         <div class="inner">
             <section>section1</section>
             <section>section2</section>
@@ -20,4 +52,5 @@
         <div class="footer">Footer</div>
     </div>
 </body>
+
 </html>

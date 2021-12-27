@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모요소 자식요소</title>
+    <style>
+        .pa {
+            margin: 20px;
+            width: 800px;
+            height: 900px;
+            border: 1px solid black;
+            position: relative;
+            /* 부모요소는 relative 지정해줘야 함. */
+        }
+
+        .box-child {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            /* 자식요소는 absolute 지정해줘야 함. */
+            right: -50px;
+            bottom: -50px;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pa">
+        <div class="box-child">
+
+        </div>
+    </div>
+</body>
+
+</html>
