@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0
+        }
+        .container {
+            border: 1px solid black;
+            width: 1200px;
+            height: 800px;
+        }
+        div {
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    <script src="main.js" defer></script>
+    <!-- defer속성 : head에서부터 랜더링 할때. head에서 .js파일을 읽어오는데, body에서 읽어야할 값이 있다면 오류가 나온다.  -->
+    <!-- 이때 defer 를 설정하면 끝까지  랜더링 한 후에 읽어오기 때문에 오류를 뱉지 않는다.-->
+</head>
+
+<body>
+    <div class="container">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </div>
+</body>
+
+</html>

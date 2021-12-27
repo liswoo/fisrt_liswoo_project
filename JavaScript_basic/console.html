@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var woolis;
+        woolis = 10;
+        console.log(woolis + 10);
+        console.log(Number.MAX_VALUE);
+        var text = "텍스트다";
+        var num = 123;
+        console.log(typeof text);
+        console.log(typeof num);
+        console.log(text + num);
+        console.log(woolis + num);
+        var object = {
+            name: "이름",
+            num: 1234
+        };
+        var test = {
+            name: "이름"
+        }
+        console.log(test);
+        // 객체. 프로퍼티. 네임. 키. 벨류
+        console.log(object);
+        var cal;
+        cal = 1 + 2;
+        cal += 5;
+        console.log(cal);
+        var cal_2;
+        cal_2 = 11 + null;
+        console.log(cal_2);
+        var cal_3;
+        cal_3 = "g" * "a";
+        console.log(cal_3);
+        // non 예상  --> 예상 틀림.
+        cal_4 = 0 / 0
+        console.log(cal_4);
+        // non 예상
+        var cal_5;
+        cal_5 = 10 / 0
+        console.log(cal_5);
+        // infinify 예상
+
+        console.log(100 % 24 / 10)
+        console.log(10 % 2.4)
+        console.log(null == undefined);
+        console.log(null === undefined);
+        // null은 javaScript의 오류로 object 타입을 갖는다.
+        console.log(1 !== 2);
+        var one = 4,
+            zero = 0,
+            nine = 1;
+        console.log(one && zero && nine);
+        console.log(one || zero);
+
+        // var anser = +prompt('32더하기 4는?');
+        // alert(anser === 36 ? "정답" : "틀림");
+
+        var a = 2,
+            b = 2;
+        if (a === b) {
+            console.log('"둘이 같은 값"');
+        };
+
+        if (a !== b) {
+            console.log('"둘이 같은 값"');
+        } else {
+            console.log('else값 출력');
+        };
+
+        var increse = 3;
+        var box;
+        box = increse++;
+        // ++increse와, increse++ 의 차이점. box 로 부터 시작되서 세미콜론 ; 까지의 문장에서 뒤에붙은 ++는 미리증가하지 않고, 다음 문장부터 영향. 앞에붙은 ++은 미리 영향을 준다.
+        box = box + increse;
+        console.log(box);
+
+        // debugger;
+        var sport = "스포츠"
+        console.log(sport);
+
+        var k = 1;
+        while (k < 3) {
+            console.log("아직 3보다 작네");
+            k++;
+        };
+
+        var r = 0, u = 0;
+        while (r < 10) {
+            u = u +1 ;
+            r++;
+        }
+        console.log(u);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
