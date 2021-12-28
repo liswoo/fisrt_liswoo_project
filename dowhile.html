@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let i = 3;
+        while  (i>0) {
+            console.log(`while:${i}`);
+            console.log(`안녕하세요`+`${i}여러분`)
+            i--;
+        }
+        
+        do {
+            console.log(`do while: ${i}`);
+            i--;
+        } while (i > 0);
+        // 위 while 문에서 이미 i는 0이 되었기 때문에, do while문의 조건인 i>0 의 조건에는 맞지 않아 콘솔에 찍히지 않아야 하지만.
+        // 먼저 실행하고 조건을 검토하는 do while의 특성 때문에, i를 0으로 반환하는 콘솔값을 확인할 수 있다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

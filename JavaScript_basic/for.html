@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for (var a = 0; a < 10; a++) {
+            console.log(a)
+        };
+
+        let t = 1,
+            y = 0;
+        while (t < 10) {
+            y++;
+            console.log('정상작동');
+            if (y === 5) {
+                break;
+            }
+            console.log('break감지');
+        };
+
+        for (var k = 0; k < 5; k++) {
+            if (k === 2 || k === 3) {
+                continue;
+            };
+            console.log(k);
+        }
+        for (var k = 0; k < 5; k++) {
+            if (k === 2 || k === 3) {
+
+            };
+            console.log(k);
+        }
+        // 변수k를 0 초기화. k를 5보다 적을때까지 1씩 증가시키면서 블록을 실행시킨다. 
+        // 블록내용은 만약 k가 2또는 3과 같다면, 하나라도 같다면 그 값을 뱉는다.
+
+        let obj = {
+            name : 'woolis', youbi: 'kirop'
+        };
+        if(obj) {
+            console.log(obj.name);
+            console.log(obj.youbi);
+        };
+        obj && console.log(obj.name);
+
+        let l = 1, j = 2;
+        l+=j
+        console.log(l);
+
+        for (i = 0; i < 11; i++) {
+            if (i % 2 === 0) {
+                console.log(i)
+            };
+            
+        }
+
+        
+
+    
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

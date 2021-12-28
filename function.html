@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayhello() {
+            console.log('hi');
+        }
+        sayhello();
+
+        function log(message) {
+            console.log(message);
+        }
+        log('hellow@');
+        //funtion에 전달되는 parameters들은 premitive parameters와, object parameters가 있다.
+        //premitve같은 경우, 메모리에 밸류가 그대로 저장이 되어있기 때문에 밸류가 전달이 되고,
+        //object의 경우, 메모리에 reference가 저장이 되어있기 때문에, 레퍼런스가 전달되어 진다.
+
+        const woolis = {
+            name: 'woolis'
+        };
+
+        function changename(obj) {
+            obj.name = 'coder'
+        };
+        changename(woolis);
+        console.log(woolis);
+
+        //그러니까.. 오브젝트를 먼저 생성하고. 오브젝트 이름이 woolis인데. 
+        //프로퍼티의 키가 name이고, value가 woolis인 오브젝트.
+        //펑션은 오브젝트이름을 파라미터로 받아서, 그 오브젝트의 키에 해당하는
+        //값을 코더로 바꿔주는 펑션이다.
+
+        const liswoo = {
+            phone_number: '010-1234-5678',
+            name: 'woolis'
+        };
+
+        function changename(obj) {
+            obj.phone_number = '010-xxxx-xxxx';
+            obj.name = 'Unknown'
+        };
+        changename(liswoo);
+        console.log(liswoo);
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
