@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1 () {                        // for~in을 사용하여, array배열에 있는 값들을 차례대로 나열하는 함수를 만든다.
+            for (var idx in array)
+            document.write(array[idx])
+        };
+    </script>
+
+
+</head>
+
+<body>
+    <!-- 배열을 만들고, 그 배열안에 있는 것들을 나열하는 함수를 만들어서 호출해보자. -->
+    <!-- 우선 배열 만들기. -->
+    <script>
+        let array = [1, 2, 3, 4, 5, 6, 7] // 배열에 1부터 7까지 값 넣었다. 
+        f1(); // head에 정한 function f1 실행.
+        
+    </script>
+</body>
+
+</html>

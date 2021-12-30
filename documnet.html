@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수</title>
+    <script>
+        function f10 (a, b){
+            document.write("f10함수 호출<br/>");
+            document.write("a : " + a + "<br/>");
+            document.write("b : " + b + "<br/>");
+            document.write("<hr/>");
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <script>
+        f10();                   // f10 funtion에 파라미터가 a,b(2개)가 있지만, 함수를 호출할 때       
+        f10(10);                 // 파라미터를 안넣어도, 하나만 넣어도, 혹은 2개 이상 넣어도 정상 작동은 한다.    
+        f10(10, 20);             // 특히 설정된 파라미터 갯수보다 값을 더 넣을 경우는, 나머지 값은 의미가 없어진다.(유실된다.)
+        f10(10, 20, 30, 40, 50);
+    </script>    
+</body>
+</html>
