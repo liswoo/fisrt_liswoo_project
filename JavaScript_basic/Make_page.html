@@ -123,9 +123,8 @@
             </div>
             <div>
                 <select class="selectbox" id="city" onchange="changecity();">
-                    <option value="re_01" selected>서울특별시</option>
+                    <option value="re_01">서울특별시</option>
                     <option value="re_02">경기도</option>
-                    <option value="re_03">제주특별시</option>
                 </select>
             </div>
             <div>
@@ -136,7 +135,7 @@
                 </select>
             </div>
             <div>
-                <select class="selectbox_2" id="city_re_02" style='display: none;'>
+                <select class="selectbox_2" id="city_re_02">
                     <option value="re_01">부천시</option>
                     <option value="re_01">수원시</option>
                     <option value="re_02">김포시</option>
@@ -167,14 +166,13 @@
             alert('성별: ' + $("#sexual").val());
             
         }
-        console.log();
+        
     </script>
     <script>
         function changecity() {
             let city = document.getElementById("city").value;
             document.getElementById("city_re_02").style.display = "";
             document.getElementById("city_re_01").style.display = "";
-            
             document.getElementById("city_"+ city).style.display = "none";
         }
             
