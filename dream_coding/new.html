@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        const sayhi = () => document.getElementById('say').innerHTML = 'hi!!!';
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <main>
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>
+    <a href="https://www.naver.com/" target="blank">여기를 클릭</a>
+    <p>여기에 <span>글을</span> 쓰자.</p>
+    <label for="favorit2">1번</label>
+    <input type="range" id="favorit2" min="1" max="9">
+    <button id="put" onclick="sayhi();">눌러</button>
+    <p id="say"></p>
+    <p>이 글자를 JavaScript로 변경해보자.</p>
+
+</body>
+
+</html>

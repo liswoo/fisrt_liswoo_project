@@ -1,0 +1,13 @@
+.alert-box {
+    background: rgb(173, 173, 247);
+    color: aquamarine;
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+    display: none;
+}
+.open_button {
+    display: block;
+    margin-top: 20px;
+}
