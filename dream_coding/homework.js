@@ -1,28 +1,35 @@
-// class person {
-//     constructor(name,age) {
-//         this.name = name;
-//         this.age = age;
-//     }
-//     speak() {
-//         console.log(`${this.name}: hello!`);
-//     }
-// }
-
-class 클래스이름 {
-    constructor (이름,나이) {
-        this.name = 이름;  // this.네임 = 값
-        this.age = 나이; 
-    }
-}
-
-let info = new 클래스이름('woolis', 12)
-console.log(info)
+// 1. 버튼을 누르면
+// 2. div class pop..이 display block 된다.
 
 
-function 함수이름 () {
-    document.getElementById('name').innerHTML ='글이 나온다.'
-}
+
+function popup(status, write) {
+    document.getElementById('popup').style.display = status;
+    document.getElementById('name').innerHTML = write;
+};
+
+// function closebox (status) {
+//     document.getElementById('popup').style.display = status;
+// };
+
+// let closebox = (status) => document.getElementById('popup').style.display = status;
 
 
-let a = 함수이름;
+
+// 1. 이벤트 리스너
+// 2. addEventListener
+
+document.getElementById('close').addEventListener('click', function(){
+    document.getElementById('popup').style.display = 'none';
+});
+
+document.getElementById('over').addEventListener('mouseover', function(){
+    document.getElementById('popup_2').style.display = 'none';
+});
+
+document.getElementById('over').addEventListener('mouseleave', function(){
+    document.getElementById('popup_2').style.display = 'block';
+});
+
+
 

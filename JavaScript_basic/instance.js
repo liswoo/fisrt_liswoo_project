@@ -21,3 +21,4 @@ console.log(obj.valueOf()); // obj의 프리미티브 값 반환. Number 인스�
 
 
 
+

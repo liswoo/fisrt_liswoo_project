@@ -1,22 +1,4 @@
 'use strict';
-//Object-oriented programming
-//class : template
-//object : instance of a class
-
-// class person {
-//     constructor(name,age) {
-//         this.name = name;
-//         this.age = age;
-//     }
-//     speak() {
-//         console.log(`${this.name}: hello!`);
-//     }
-// }
-
-// const woolis = new person('woolis', 35);
-// console.log(woolis.name);
-// console.log(woolis.age);
-// woolis.speak();
 
 class info {
     constructor (birth,id) {

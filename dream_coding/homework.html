@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homwork</title>
-    <script src="./homework.js"></script>
     <link rel="stylesheet" href="./homework.css">
 </head>
 
@@ -15,23 +14,32 @@
         <h1>JavaScript</h1>
     </header>
     <nav>
-        
-            <div>
-                <div><button onclick="함수이름()">버튼 0</button></div>
-                <div><button>버튼 1</button></div>
-                <div><button>버튼 2</button></div>
-                <div><button>버튼 3</button></div>
-                <div><button>버튼 4</button></div>
-                <div><button>버튼 5</button></div>
-            </div>
-   </nav>
+
+        <div>
+            <div><button onclick="popup('block','아이디를 입력하세요')">아이디</button></div>
+            <div><button onclick="popup('block','비밀번호를 입력하세요')">비밀번호</button></div>
+            <div><button id="close">닫기</button></div>
+            <div><button id="over">mouseover</button></div>
+            <div><button>버튼 4</button></div>
+            <div><button>버튼 5</button></div>
+        </div>
+    </nav>
     <main>
         <div>
-            <p id="name"></p>
+            <div class="popupstyle" id='popup'>
+                <p id="name"></p>
+            </div>
+            <div class="popupstyle_2" id='popup_2'>
+                <p id="name"></p>
+            </div>
         </div>
-        
+
+        <div>
+            
+        </div>
+
     </main>
-    
+    <script src="./homework.js"></script>
 </body>
 
 </html>
