@@ -1,0 +1,30 @@
+html, body {
+    margin: 0px;
+}
+.container {
+    background: rgb(233, 233, 252);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.item1 {
+    background: blueviolet;
+    width: 100%;
+    height: 20%;
+}
+.item2 {
+    background: rgb(153, 228, 178);
+    width: 100%;
+    height: 70%;
+}
+.item3 {
+    background: rgb(222, 238, 77);
+    width: 100%;
+    height: 10%;
+}
+/* .item4 {
+    background: rgb(240, 67, 110);
+    width: 100%;
+    height: 10%;
+} */
