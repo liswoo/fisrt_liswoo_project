@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayhi () {
+            document.getElementById('sayhi').innerHTML = "Hi? it is work?";
+        }
+        function todaywheather () {
+            document.getElementById('weather').innerHTML = grade[0];
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <p id="sayhi">
+            안녕하세요?
+        </p>
+    </div>
+    <div>
+        <button onclick="sayhi();">
+            버튼입니다.
+        </button>
+    </div>
+    <div>
+        <button onclick="todaywheather();">
+            오늘의 날씨는?
+        </button>
+    </div>
+    <div>
+        <button id="weather"></button>
+    </div>
+    <script>
+       let grade = ['A','B','C','D']
+    </script>
+</body>
+</html>

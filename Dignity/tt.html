@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- getname에 이름을 받아와서, 오브젝트.네임 으로 값을 가져오려했지만 안됨.. 이유 찾아야 함. -->
+</head>
+<body>
+    <input id='a'>
+    <button onclick="f1();">눌러</button>
+    <input id='b'>
+
+    <script>
+        function f1 () {
+            let getname = document.getElementById('a').value;
+            document.getElementById('b').innerHTML = getname;
+        }
+    </script>
+</body>
+</html>

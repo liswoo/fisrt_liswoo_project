@@ -1,0 +1,9 @@
+.yellow-bg {
+    background: yellow;
+}
+.back {
+    background: black;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./jQuery.css">
+</head>
+
+<body>
+    <h3 id="test">안녕하세요?</h3>
+        <p class="greeting">하이</p>
+        <p class="greeting">하이</p>
+        <p class="greeting">하이</p>
+        <p class="greeting">하이</p>
+        <button class="btn">버튼</button>
+        <div id="back" class="back">
+            d
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $('#test').html('안녕테스트야');
+            $('#test').text('안녕테스트야');
+            $('#test').css('color', 'red');
+            $('#test').addClass('yellow-bg');
+            // document.getElementsByClassName('greeting')[1].innerHTML = '안녕';
+            // document.getElementsByClassName('greeting')[2].innerHTML = '안녕';
+            // document.getElementsByClassName('greeting')[3].innerHTML = '안녕';
+            $('.greeting').html('안녕') // 한번에 클래스 모두 바꿀 수 있다.
+            
+            let a = () => $('#back').css('display', 'none');
+            $('.btn').on('click', function () {
+                $('#back').css('display', 'none');
+            });
+            
+
+        </script>
+
+
+</body>
+
+</html>
