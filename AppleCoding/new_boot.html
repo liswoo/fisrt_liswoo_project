@@ -18,7 +18,14 @@
 </head>
 
 <body>
-
+    <div class="whole">
+        <div class="white">
+            <p class="sucess">로그인 성공하셨습니다.</p>
+            <div class="goin">
+                <button id="goin" class="goinbutton">Go_In</button>
+            </div>
+        </div>
+    </div>
     <!-- body 자체에 flex 걸려있음. -->
 
     <!-- Main 컨테이너 시작 -->
@@ -73,7 +80,7 @@
                 <div class="input-group">
                     <span class="input-group-text">ID/PW</span>
                     <input id="id" type="text" aria-label="First name" class="form-control">
-                    <input id="pw" type="text" aria-label="Last name" class="form-control">
+                    <input type="password" id="pw" type="text" aria-label="Last name" class="form-control">
                     <!-- login 버튼 -->
                     <button id="login_button" type="button" class="btn btn-outline-danger">Log-In</button>
                 </div>
@@ -160,6 +167,11 @@
                 console.log('로그인성공')
             }
         })
+        $('#goin).on('click', function(){
+           $('.whole').fadeOut();
+        })
+//  로그인 모달 사라지게 만들기. 여기서부터
+
         
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
