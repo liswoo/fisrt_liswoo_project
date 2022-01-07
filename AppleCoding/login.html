@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input value</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <link href="./login.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="black_back">
+        <div class="white_back">
+            <p class="login_success">로그인 성공</p>
+            <p id="welcom" class="login_success"> 환영합니다. "" 님</p>
+            <a href="http://www.naver.com"><button id="go_in">Go-in</button></a>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="login_page">
+            <caption>ID : </caption>
+            <input id="input_id" class="input_box">
+
+            <caption>PassWord : </caption>
+            <input type="password" id="input_password" class="input_box">
+            <button id="login_button">Login</button>
+        </div>
+
+    </div>
+
+    <script>
+        let user_info = {
+            'woosdsd': ['a1058314', '우종민'],
+            'woosdsd1': 'b1058314'
+        };
+
+        $('#login_button').on('click', function () {
+            if ($('#input_id').val() == 'woosdsd' && $('#input_password').val() == user_info.woosdsd[0]) {
+                $('.black_back').fadeIn()
+            }
+        })
+
+
+        $('#welcom').text(`환영합니다.` + user_info.woosdsd[1] + `님`)
+
+        $('#go_in').on('click', function () {
+            $('.black_back').fadeOut()
+        })
+    </script>
+
+
+
+</body>
+
+</html>

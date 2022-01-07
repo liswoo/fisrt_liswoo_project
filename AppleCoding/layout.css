@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/cool-background-p.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    border: 1px solid black;
+    width: 80%;
+    height: 1200px;
+    flex-direction: column;
+
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.item_1 {
+    display: flex;
+    flex-grow: 2;
+    background-image: url('../images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.item_2 {
+    display: flex;
+    flex-grow: 3;
+}
+
+.item_3 {
+    display: flex;
+    flex-grow: 6;
+}
+
+.item_4 {
+    display: flex;
+    flex-grow: 3;
+}
+.logo {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.login {
+    border: 1px  solid black;
+}
+.nav {
+    display: flex;
+    border: 1px solid black;
+    flex-grow: 2;
+    justify-content: end;
+    align-items: flex-end;
+}
+.nav_section {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.meue {
+    margin-left: 10px;
+}
+.m_button {
+    width: 100px;
+}
+
+.section_1 {
+    border: 1px solid black;
+    flex-grow: 1;
+
+}
+
+.section_2 {
+    display: flex;
+    border: 1px solid black;
+    flex-grow: 2;
+    justify-content: space-evenly;
+
+}
+
+.section_3 {
+    border: 1px solid black;
+    flex-grow: 1;
+    background-image: url('../images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.section_4 {
+    border: 1px solid black;
+    flex-grow: 1;
+
+}
+
+.section_5 {
+    border: 1px solid black;
+    flex-grow: 1;
+
+}
+
+.section_6 {
+    border: 1px solid black;
+    flex-grow: 1;
+
+}
+
+.hidden {
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    flex-direction: row;
+    display: none;
+    background-color: #845EC2;
+}
+.hidden_div {
+    /* border: 1px solid black; */
+    
+}
+.list {
+    padding: 10px;
+    list-style: none;
+    text-align: end;
+    text-decoration: none;
+    margin-right: 200px;
+    font: medium;
+}
+.aa {
+    text-decoration: none;
+}
