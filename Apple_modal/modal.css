@@ -1,0 +1,11 @@
+.modal_back {
+    border: 1px solid black;
+    width: 25%;
+    display: none;
+}
+.form-group {
+    margin: 10px;
+}
+.inputms {
+    display: none;
+}
