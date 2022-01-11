@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3 id="hi">안녕</h3>
+    <script>
+        // animate 함수로, css 변동에 걸리는 시간을 두어 움직이는 효과를 만들 수 있다.
+        $('#hi').click(function(){
+            $('#hi').animate({ marginTop : '100px'}, 300)
+            $('#hi').animate({ marginTop : '70px'}, 500)
+            $('#hi').animate({ marginTop : '100px'}, 400)
+            $('#hi').animate({ marginTop : '50px'}, 500)
+            $('#hi').animate({ marginTop : '100px'}, 300)
+        });
+    </script>
+</body>
+</html>

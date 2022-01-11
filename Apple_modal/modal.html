@@ -16,6 +16,13 @@
 </head>
 
 <body>
+    
+    <div class="black">
+        <div class="white">
+
+        </div>
+    </div>
+    <button id="moclick">모달클릭</button>
     <button id="click">클릭</button>
     <div class="modal_back">
         <div class="modal_white">
@@ -49,4 +56,12 @@
             console.log('아니다');
         }
         })
+    
+        $('#moclick').click(function(){
+            $('.black').show();
+            $('.black').css('transform', 'translateY(-0px)');
+        });
 </script>
+        
+    
+    

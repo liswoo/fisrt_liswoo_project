@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate_menu</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="./addClass.css" rel="stylesheet">
+</head>
+<body>
+    <div class="modal_back">
+        <div class="modal_front ">
+            <p class="text_center">로그인 하세요</p>
+            <input class="input_modal">
+            <input class="input_modal" type="password">
+        </div>
+    </div>
+    <button id="modal_button">버튼</button>
+    <script>
+        $('#modal_button').click(function(){
+            $('.modal_back').addClass('modal_down');
+            setTimeout(function(){$('.modal_back').removeClass('modal_down');},5000)
+            clearTimeout();
+        });
+    </script>
+    
+</body>
+</html>
