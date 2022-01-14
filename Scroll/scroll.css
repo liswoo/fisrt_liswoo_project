@@ -1,0 +1,14 @@
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    z-index: 5;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+}
+
+.turn_black {
+    background-color: black;
+}

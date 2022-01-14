@@ -19,6 +19,8 @@
 <!-- Modal -->
 
 <body>
+    
+
     <div class="whole">
         <div class="white">
             <p class="sucess">로그인 성공하셨습니다.</p>
@@ -45,13 +47,20 @@
 
     <!-- Main 컨테이너 시작 -->
     <div class="container">
+       
+
         <div class="item item_1">
+         
             <div class="logo">
 
             </div>
             <!-- nav 메뉴 버튼시작 -->
-
+                <!-- 맨위 로고 Shirts Studio -->
+        <div class="nav_menu">
+            <p>Shirts Studio</p>
+        </div>
             <ul class="nav nav-pills">
+                
                 <li class="nav-item">
                     <a class="nav-link active m_button" aria-current="page" href="#">Active</a>
                 </li>
@@ -130,6 +139,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    
                 </div>
                 <!-- 사진 슬라이드 끝 -->
             </div>
@@ -159,22 +169,56 @@
         </div>
         <div class="item item_3">
             <div class="section_3">
-
+                
             </div>
         </div>
         <div class="item item_4">
             <div class="section_4">
-
             </div>
             <div class="section_5">
 
             </div>
             <div class="section_6">
-
+                <div class="container mt-5">
+                    <ul class="list">
+                        <li id="pro" class="tab-button">Products</li>
+                        <li id="info" class="tab-button">Information</li>
+                        <li id="ship" class="tab-button">Shipping</li>
+                    </ul>
+                    <div id="tab_pro" class="tab-content">
+                        <p>상품설명입니다. Product</p>
+                    </div>
+                    <div id="tab_info" class="tab-content">
+                        <p>상품정보입니다. Info</p>
+                    </div>
+                    <div id="tab_ship" class="tab-content">
+                        <p>배송정보입니다. Shipping</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script>
+        $('.tab-button').eq(0).click(function(){
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(0).addClass('active');
+            $('.tab-content').eq(0).addClass('show');
+        })
+        $('.tab-button').eq(1).click(function(){
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(1).addClass('active');
+            $('.tab-content').eq(1).addClass('show');
+        })
+        $('.tab-button').eq(2).click(function(){
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(2).addClass('active');
+            $('.tab-content').eq(2).addClass('show');
+        })
+        
+
         $('.m_button').on('click', function () {
             $('.hidden').fadeToggle()
         })
@@ -188,6 +232,16 @@
 
         $('#goin').on('click', function () {
             $('.whole').fadeOut();
+        })
+
+        // 스크롤 시, script
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() > 100){
+                $('.nav_menu').addClass('turn_black');
+            }
+            else {
+                $('.nav_menu').removeClass('turn_black');
+            }
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
