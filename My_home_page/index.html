@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woolis's Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- modal start -->
+    <div class="modal_back">
+        <div class="modal_front">
+            <hr class="my-4">
+            <p style="font-size: 25px;">Sign Up</p>
+
+            <div>
+                <p>Email address</p>
+                <input type="email" id="email">
+            </div>
+
+            <div class="margin_top">
+                <p>Password</p>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <button id="go_in" class="go_in btn btn-primary btn-lg">submit</button>
+                <button id="go_in" class="go_in btn btn-primary btn-lg">close</button>
+            </div>
+            <hr class="my-4">
+        </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- fixed logo start -->
+    <div class="fixed_logo">
+        Woolis Blog
+    </div>
+    <!-- fixed logo end -->
+
+
+    <div class="container">
+        <!-- main start -->
+        <div class="item item_1">
+            <div class="jumbotron main_background">
+                <h1>Woolis's Blog</h1>
+                <p class="write">Hi, this is my first blog ever.</p>
+                <div class="write">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+                <hr class="my-4">
+                <a id="btn_1" class="btn btn-primary btn-lg" href="#" role="button" style="font-size: 15px;">Sign UP</a>
+                <a id="btn_2" class="btn btn-primary btn-lg" href="#" role="button"
+                    style="font-size: 15px;">button_2</a>
+                <hr class="my-4">
+            </div>
+
+        </div>
+        <!-- main end -->
+
+        <!-- picture slide start -->
+        <div class="item item_1">
+            <div class="section">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/new_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/new_3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/new_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <!-- slide picture end -->
+
+        <!-- tab start -->
+        <div class="item">
+            <div class="mt-5">
+                <ul class="list">
+                    <li class="tab-button active">All-Product</li>
+                    <li class="tab-button">Apple</li>
+                    <li class="tab-button">Watch</li>
+                    <li class="tab-button">Camera</li>
+                </ul>
+                <!-- product_1 -->
+                <div class="mulit_product">
+                    <div class="tab-content show">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img2/apple.jpg" class="apple-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Brand : Apple</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.make up the bulk of the card's content.make up the bulk
+                                    of the of the</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content show">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img2/watch.jpg" class="watch-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Watch</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content show">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./img2/camera.jpg" class="camera-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Camera</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.make up the bulk of the card's content.make up the bulk
+                                    of theof the</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab end -->
+        <div class="item">
+            <form class="container my-5">
+                <div class="form-group">
+                    <p>Product</p>
+                    <select class="form-control" id="option_1">
+                        <option id="o1">Hat</option>
+                        <option id="o2">Shirts</option>
+                    </select>
+                </div>
+                <div class="select_size">
+                    <div class="form-group mt-4">
+                        <p>Size</p>
+                        <select class="form-control" id="option_2">
+                            <option>Large</option>
+                            <option>Small</option>
+                            <option>Smaller</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div style="margin-bottom: 500px"></div>
+        </div>
+        <div class="item">
+            <p>footer</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.</p>
+        </div>
+    </div>
+    <script>
+        // modal function
+        $('#btn_1').on('click', function () {
+            $('.modal_back').addClass('modal_pop')
+        });
+        $('#go_in').on('click', function () {
+            $('.modal_back').removeClass('modal_pop')
+        });
+
+        // 이벤트 버블링 떄문에, 하위요소 클릭 시 상위 요소 클릭으로 받아들여져서, 특정 이벤트만 호출할 수 없는 경우 해결책.
+        // 만약에 지금 실제로 클릭한게, 검은 배경일 때만 모달창을 닫아줘.
+        // e.target; 지금 실제로 클릭한 요소
+        // e.currentTarget; 지금 이벤트리스너가 달린 곳(여기서는 .modal_back) 혹은 $(this) 라고 표현.
+        // e.preventDefault;  기본동작 막기를 위한 함수
+        $('.modal_back').click(function (e) {
+            if (e.target == e.currentTarget) {
+                $('.modal_back').removeClass('modal_pop')
+            }
+        });
+        // scroll function
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 100) {
+                $('.fixed_logo').addClass('change_color');
+            } else if ($(window).scrollTop() < 100) {
+                $('.fixed_logo').removeClass('change_color');
+            }
+            // if ($(window).scrollTop() > 600) {
+            //     $('.fixed_logo').addClass('change_color_1');
+            // } else if ($(window).scrollTop() < 600) {
+            //     $('.fixed_logo').removeClass('change_color_1');
+            // }
+        });
+
+        // tab function
+        $('.tab-button').eq(0).click(function () {
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(0).addClass('active');
+            $('.tab-content').addClass('show');
+        })
+        $('.tab-button').eq(1).click(function () {
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(1).addClass('active');
+            $('.tab-content').eq(0).addClass('show');
+        })
+        $('.tab-button').eq(2).click(function () {
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(2).addClass('active');
+            $('.tab-content').eq(1).addClass('show');
+        })
+        $('.tab-button').eq(3).click(function () {
+            $('.tab-button').removeClass('active');
+            $('.tab-content').removeClass('show');
+            $('.tab-button').eq(3).addClass('active');
+            $('.tab-content').eq(2).addClass('show');
+        })
+        
+        let proudct = {모자: 'Hat', 셔츠 : 'Shirts' }
+        let size = ['Large','Small','Smaller']
+        $('#o1').html(proudct.모자)
+        $('#o2').html(proudct.셔츠)
+
+        $('#option_1').on('change', function(){
+            if($('#option_1').val() == proudct.셔츠){
+                $('.select_size').addClass('select_size_open')
+            }
+        })
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

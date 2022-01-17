@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     background-image: url('../images/cool-background-p.png');
     background-repeat: no-repeat;
     background-size: cover;
