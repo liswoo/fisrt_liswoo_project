@@ -31,7 +31,7 @@
             </div>
             <div>
                 <button id="go_in" class="go_in btn btn-primary btn-lg">submit</button>
-                <button id="go_in" class="go_in btn btn-primary btn-lg">close</button>
+                <button id="close" class="go_in btn btn-primary btn-lg">close</button>
             </div>
             <hr class="my-4">
         </div>
@@ -124,11 +124,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="./img2/apple.jpg" class="apple-img" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Brand : Apple</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.make up the bulk of the card's content.make up the bulk
-                                    of the of the</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Apple</h5>
+                                <p class="card-text">Price : 70000</p>
+                                <a href="#" class="btn btn-primary">Go get this</a>
                             </div>
                         </div>
                     </div>
@@ -137,9 +135,8 @@
                             <img src="./img2/watch.jpg" class="watch-img" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Watch</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">Price : 50000</p>
+                                <a href="#" class="btn btn-primary">Go get this</a>
                             </div>
                         </div>
                     </div>
@@ -148,64 +145,69 @@
                             <img src="./img2/camera.jpg" class="camera-img" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Camera</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.make up the bulk of the card's content.make up the bulk
-                                    of theof the</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">Price : 60000</p>
+                                <a href="#" class="btn btn-primary">Go get this</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="container my-4">
+                    <button class="btn btn-primary" id="sort_price">Order by Price</button>
+                </div>
             </div>
         </div>
+        
         <!-- tab end -->
         <div class="item">
             <form class="container my-5">
                 <div class="form-group">
                     <p>Product</p>
                     <select class="form-control" id="option_1">
-                        <option id="o1">Hat</option>
-                        <option id="o2">Shirts</option>
+                        <option id="o1">Shirts</option>
+                        <option id="o2">Hat</option>
+                        <option id="o3">Pants</option>
                     </select>
                 </div>
                 <div class="select_size">
                     <div class="form-group mt-4">
                         <p>Size</p>
                         <select class="form-control" id="option_2">
-                            <option>Large</option>
-                            <option>Small</option>
-                            <option>Smaller</option>
+
                         </select>
                     </div>
                 </div>
             </form>
 
+            <form class="container my-5">
+                <div class="form-group">
+                    <p>Price</p>
+                    <select class="form-control" id="price">
+                        <!-- ('#price').append(make_tag);-->
+                    </select>
+                </div>
+                
+            </form>
+
+            <div>
+                <button class="mt-4" id="order">Order by Price</button>
+                <button class="mt-4" id="order_1">Order by text</button>
+            </div>
+
+
             <div style="margin-bottom: 500px"></div>
         </div>
-        <div class="item">
-            <p>footer</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.</p>
+        <div class="item" id="test">
+
         </div>
+
     </div>
+    <!-- javaScript -->
     <script>
         // modal function
         $('#btn_1').on('click', function () {
             $('.modal_back').addClass('modal_pop')
         });
-        $('#go_in').on('click', function () {
+        $('#close').on('click', function () {
             $('.modal_back').removeClass('modal_pop')
         });
 
@@ -258,18 +260,132 @@
             $('.tab-button').eq(3).addClass('active');
             $('.tab-content').eq(2).addClass('show');
         })
-        
-        let proudct = {모자: 'Hat', 셔츠 : 'Shirts' }
-        let size = ['Large','Small','Smaller']
-        $('#o1').html(proudct.모자)
-        $('#o2').html(proudct.셔츠)
 
-        $('#option_1').on('change', function(){
-            if($('#option_1').val() == proudct.셔츠){
-                $('.select_size').addClass('select_size_open')
+        //Product list & size
+        let proudct = {
+            모자: 'Hat',
+            셔츠: 'Shirts',
+            바지: 'Pants'
+        }
+        let hat_size = ['H-65', 'H-70', 'H-80', 'H-90']
+        let pants_size = ['P-26', 'P-28', 'P-30', 'P-32']
+
+        $('#option_1').on('change', function () {
+            if ($('#option_1').val() == 'Hat') {
+                $('#option_2').html('')
+                $('.select_size').addClass('select_size_open');
+                for (let i = 0; i < 4; i++) {
+                    let templete = `<option>${hat_size[i]}</option>`
+                    $('#option_2').append(templete)
+                }
+            } else if ($('#option_1').val() == 'Pants') {
+                $('#option_2').html('')
+                $('.select_size').addClass('select_size_open');
+                for (let i = 0; i < 4; i++) {
+                    let templete = `<option>${pants_size[i]}</option>`
+                    $('#option_2').append(templete)
+                }
+            } else {
+                $('.select_size').removeClass('select_size_open');
             }
         })
 
+        // 위에서는 for문으로 append()에 들어갈 html을 작성했지만, 
+        // forEach를 사용하면, 좀 더 배열에 직관적인 코드를 짤 수 있다.
+
+        var 출석부 = ['흥민', '영희', '철수', '재석']
+
+        // function findname (이름) {
+        //     for (let i = 0; i < 출석부.length; i++){
+        //         if(이름 ==  출석부[i]) {
+        //         console.log('있음')
+        //     } else {
+        //         console.log('없음')
+        //     }
+        //     return;
+        //     }
+        // };
+
+        function findname(이름) {
+            출석부.forEach(function (i) {
+                if (i == 이름) {
+                    console.log('있음')
+                } else {
+                    console.log('없음')
+                }
+            })
+        }
+        // 상품 데이터
+        var products = [{
+                id: 0,
+                price: 70000,
+                title: 'Apple'
+            },
+            {
+                id: 1,
+                price: 50000,
+                title: 'Watch'
+            },
+            {
+                id: 2,
+                price: 60000,
+                title: 'Camera'
+            }
+        ];
+            
+        // for(let i = 0; i<products.length; i++){
+        //     $('.card-title').eq(i).html(products[i].title);
+        //     $('.card-text').eq(i).html(`Price:`+ products[i].price );  
+        // };
+
+        // $('.card-title').eq(0).html(products[0].title);    
+        // $('.card-title').eq(1).html(products[1].title);  
+        // $('.card-title').eq(2).html(products[2].title);  
+
+        $('#sort_price').click(function(){
+            products.sort(function(a,b){
+                return a.price - b.price;
+            });
+            for(let i = 0; i<products.length; i++){
+            $('.card-title').eq(i).html(products[i].title);
+            $('.card-text').eq(i).html(`Price:`+ products[i].price );  
+        };
+        })
+
+        //  order by price
+        let price_array =  [{name:'red', price:2000},{name:'blue', price:1000},{name:'purple', price:5000},{name:'green', price:3000},{name:'black', price:4000}]
+        
+        for(let i = 0; i < price_array.length; i++){
+            let make_tag = `<option>${price_array[i].name}Shirts : ${price_array[i].price}</option>`
+            $('#price').append(make_tag);
+        }
+        
+        $('#order').click(function(){
+            price_array.sort(function(a,b){
+                return a.price - b.price;
+            });
+            $('#price').html('');
+            for(let i = 0; i < price_array.length; i++){
+            let make_tag = `<option>${price_array[i].name}Shirts : ${price_array[i].price}</option>`
+            $('#price').append(make_tag);
+        }
+        })
+
+        $('#order_1').click(function(){
+            price_array.sort();
+            $('#price').html('');
+            for(let i = 0; i < price_array.length; i++){
+            let make_tag = `<option>${price_array[i].name}Shirts : ${price_array[i].price}</option>`
+            $('#price').append(make_tag);
+        }
+        })
+            
+      
+
+            
+            
+        
+        
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
