@@ -189,8 +189,8 @@
             </form>
 
             <div>
-                <button class="mt-4" id="order">Order by Price</button>
-                <button class="mt-4" id="order_1">Order by text</button>
+                <button class="mt-4" id="order_price">Order by Price</button>
+                <button class="mt-4" id="filter_price">3000원이하 가격보기</button>
             </div>
 
 
@@ -352,17 +352,17 @@
         };
         })
 
-        //  order by price
+        // 배열 순서대로 select box에 값 넣어놓기.
         let price_array =  [{name:'red', price:2000},{name:'blue', price:1000},{name:'purple', price:5000},{name:'green', price:3000},{name:'black', price:4000}]
         
         for(let i = 0; i < price_array.length; i++){
             let make_tag = `<option>${price_array[i].name}Shirts : ${price_array[i].price}</option>`
             $('#price').append(make_tag);
         }
-        
+        //  가격순 오름차순 정렬
         $('#order').click(function(){
             price_array.sort(function(a,b){
-                return a.price - b.price;
+                return a.price - b.price;    // a-b 는 오름차순. b-a는 내림차순.
             });
             $('#price').html('');
             for(let i = 0; i < price_array.length; i++){
@@ -370,16 +370,19 @@
             $('#price').append(make_tag);
         }
         })
-
-        $('#order_1').click(function(){
-            price_array.sort();
+        
+        //  가격 필터링
+        $('#filter_price').click(function(){
+            let new_price_array = price_array.filter(function(a){
+                return a < 4000
+            });
             $('#price').html('');
             for(let i = 0; i < price_array.length; i++){
             let make_tag = `<option>${price_array[i].name}Shirts : ${price_array[i].price}</option>`
             $('#price').append(make_tag);
         }
         })
-            
+        
       
 
             
