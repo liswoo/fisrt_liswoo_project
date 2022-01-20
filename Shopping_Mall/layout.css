@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+}
+.item {
+    display: flex;
+    border: 1px solid black;
+    height: 400px;
+    width: 100px;
+
+}
+.img_box {
+    border: 1px solid black;
+    height: 40%;
+    width: 100%;
+    background-image: url('/My_home_page/img2/headset.jpg');
+    background-size: cover;
+    background-repeat : no-repeat;
+}

@@ -18,57 +18,332 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="card" style="width: 18rem;">
-            <img src="/My_home_page/img2/apple.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-            </div>
+    <!-- nav 시작 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Woo's wish SHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/My_home_page/img2/camera.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="/My_home_page/img2/headset.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Purchase</a>
-            </div>
+      </nav>
+    <!-- nav 끝 -->
+    <!-- Order by price 시작 -->
+    <div class="input_group">
+        <div class="input-group mt-5">
+            <label class="input-group-text" for="inputGroupSelect01">Order by price</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>choose..</option>
+                <option value="1">Asending</option>
+                <option value="2">Desending</option>
+            </select>
         </div>
     </div>
+    <!-- Order by price 끝 -->
+    <!-- Filter by price 시작 -->
+    <div class="input_group">
+        <div class="input-group mt-3">
+            <label class="input-group-text" for="inputGroupSelect02"> Filter- by price </label>
+            <select class="form-select" id="inputGroupSelect02">
+                <option selected>choose..</option>
+                <option value="1">Less than $100</option>
+                <option value="2">Less than $500</option>
+                <option value="3">Less than $1000</option>
+            </select>
+        </div>
+    </div>
+    <!-- Filter by price 끝 -->
+    <!-- 실험버튼 시작 -->
+    <div class="input_group">
+        <div class="input-group mt-3">
+            <button type="button" class="btn btn-outline-secondary">Action</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="ture">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+          </div>
+    </div>
+    <!-- 실험버튼 끝 -->
+
+    <div class="container product_1 mt-5">
+
+    </div>
+
+    <div class="container product_2 mt-5">
+
+    </div>
+
+
     <script>
-        let products_catalog = [
-            {
-                name: 'Apple',
-                price: 500000,
-                content: 'This is brand-new item, ever! try this one.'
+        // 상품 정보 배열. - 배열에 정보 추가시, 상품 카데고리 동적으로 생성됨.
+        let products_catalog = [{
+                name: 'Apple-iPhone',
+                price: 800,
+                content: 'Apple Inc. is an American multinational technology company that specializes in consumer electronics, computer software and online services. This is brand-new item, ever! try this one.',
+                picture: '/My_home_page/img2/iphone_1.jpg'
             },
             {
                 name: 'Sony',
-                price: 700000,
-                content: 'Can i recomend this camera? that is sony!'
+                price: 700,
+                content: 'That is sony! Designed for content creation: vari-angle LCD screen, body grip and recording lamp Large 1.0-type Exmor RSTM CMOS image sensor and ZEISS® 24-70mm1 lens',
+                picture: '/My_home_page/img2/sony.jpg'
             },
             {
-                name: 'Apple',
-                price: 200000,
-                content: 'Oh my godnees. perfect sound, design, performace. Go get this.'
+                name: 'Bike',
+                price: 200,
+                content: 'The A20 Aviation Headset is engineered to be more comfortable and provide more noise reduction than any headset we’ve ever made, while still delivering the clear audio you expect from Bose. ',
+                picture: '/My_home_page/img2/bike.jpg'
+            },
+            {
+                name: 'Labtop',
+                price: 100,
+                content: 'The Das Keyboard 5QS is the second generation of the 5Q keyboard, the smart RGB mechanical keyboard that helps boost productivity by displaying information (e.g. weather, stock quotes, project progress, CPU usage, etc..) in color on the keyboard’s keys.',
+                picture: '/My_home_page/img2/sam.jpg'
+            },
+            {
+                name: 'Controller',
+                price: 80,
+                content: 'Plot a course for astronomical adventures on your PS5™ console with the DualSense™ Galactic Purple wireless controller. Discover a deeper, highly immersive gaming experience* that brings the action to life in the palms of your hands.',
+                picture: '/My_home_page/img2/Ps5.jpg'
+            },
+            {
+                name: 'Monitor',
+                price: 300,
+                content: `Get the Best LG monitors. With 4K and 5K displays, UltraWide Options and All the Best Gaming Monitors. It's Easy to Find the Right Solution For All You Do.`,
+                picture: '/My_home_page/img2/desktop.jpg'
+            },
+            {
+                name: 'Desktop',
+                price: 1000,
+                content: 'Oh my godnees. perfect sound, design, performace. Go get this. CYBERPOWERPC Gamer Xtreme VR Gaming PC, Intel Core i5-11600KF 3.9GHz, 16GB DDR4, GeForce RTX 3060 12GB, 500GB NVMe SSD, 1TB HDD, WiFi Ready & Win 11 Home (GXiVR8480A10)',
+                picture: '/My_home_page/img2/PC.jpg'
+            },
+            {
+                name: 'Game-title',
+                price: 50,
+                content: 'Layer in the sounds of Game Title Menu Music Pack from RobotSound for your next project. Browse all audio options on the Unity Asset Store.',
+                picture: '/My_home_page/img2/PACK.jpg'
             }
         ]
 
-        
-    </script>
+        // 상품 진열 카드 동적 생성.
+        for (let i = 0; i < products_catalog.length; i++) {
+            if (i < 4) {
+                $('.product_1').append(`
+           <div class="card" style="width: 20rem;">
+           <span class="card-img"><img src="/My_home_page/img2/apple.jpg" class="card-img-top card_img_align" alt="..."></span>
+           <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-price">100000</p>
+               <p class="card-content">Some quick example text to build on the card title and make up the bulk of
+                   the card's
+                   content.</p>
+           </div>
+           <div><a href="#" class="btn btn-primary p_button">Purchase</a></div>
+           </div>
+           `);
+            } else {
+                $('.product_2').append(`
+           <div class="card" style="width: 20rem;">
+           <span class="card-img"><img src="/My_home_page/img2/apple.jpg" class="card-img-top card_img_align" alt="..."></span>
+           <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-price">100000</p>
+               <p class="card-content">Some quick example text to build on the card title and make up the bulk of
+                   the card's
+                   content.</p>
+           </div>
+           <div><a href="#" class="btn btn-primary p_button">Purchase</a></div>
+           </div>
+           `);
+            }
+        }
 
+        for (let i = 0; i < products_catalog.length; i++) {
+            $('.card-title').eq(i).html(`${products_catalog[i].name}`);
+            $('.card-price').eq(i).html(`Price : $ ${products_catalog[i].price}`);
+            $('.card-content').eq(i).html(`${products_catalog[i].content}`);
+            $('.card-img').eq(i).html(`<img src="${products_catalog[i].picture}" class="card-img-top" alt="...">`);
+        }
+
+        // 상품 가격 오름차순 기능
+
+        $('#inputGroupSelect01').on('change', function () {
+
+            if ($('#inputGroupSelect01').val() == 1) {
+                let new_products_catalog = products_catalog.sort(function (a, b) {
+                    return a.price - b.price;
+                })
+
+                for (let i = 0; i < new_products_catalog.length; i++) {
+                    $('.card-title').eq(i).html(`${new_products_catalog[i].name}`);
+                    $('.card-price').eq(i).html(`Price : $ ${new_products_catalog[i].price}`);
+                    $('.card-content').eq(i).html(`${new_products_catalog[i].content}`);
+                    $('.card-img').eq(i).html(
+                        `<img src="${new_products_catalog[i].picture}" class="card-img-top" alt="...">`);
+                };
+            }
+        })
+        // 상품 가격 내림차순 기능
+        $('#inputGroupSelect01').on('change', function () {
+            
+            if ($('#inputGroupSelect01').val() == 2) {
+                let new_products_catalog = products_catalog.sort(function (a, b) {
+                    return b.price - a.price;
+                })
+                
+
+                for (let i = 0; i < new_products_catalog.length; i++) {
+                    $('.card-title').eq(i).html(`${new_products_catalog[i].name}`);
+                    $('.card-price').eq(i).html(`Price : $ ${new_products_catalog[i].price}`);
+                    $('.card-content').eq(i).html(`${new_products_catalog[i].content}`);
+                    $('.card-img').eq(i).html(
+                        `<img src="${new_products_catalog[i].picture}" class="card-img-top" alt="...">`);
+                };
+            }
+        });
+
+        // 가격 필터 기능 - $100 이하       
+        $('#inputGroupSelect02').on('change', function(){
+        if($('#inputGroupSelect02').val() == 1){
+            $('.container').html('');    //html싹 비우고.
+            
+        let new_products_catalog_2 = products_catalog.filter(function(a){    // 카탈로그 필터링 해서, new2 배열에 넣고.
+        return a.price <= 100 });
+        for (let i = 0; i < new_products_catalog_2.length; i++) {     //new2 배열 수만큼 반복해서 html생성하고
+             
+                $('.product_1').append(`
+           <div class="card" style="width: 20rem;">
+           <span class="card-img"><img src="/My_home_page/img2/apple.jpg" class="card-img-top card_img_align" alt="..."></span>
+           <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-price">100000</p>
+               <p class="card-content">Some quick example text to build on the card title and make up the bulk of
+                   the card's
+                   content.</p>
+           </div>
+           <div><a href="#" class="btn btn-primary p_button">Purchase</a></div>
+           </div>
+           `);
+            
+        }
+        
+        for (let i = 0; i < new_products_catalog_2.length; i++) {                           // new2 배열수 만큼 반복해서 html값 넣는다.
+                    $('.card-title').eq(i).html(`${new_products_catalog_2[i].name}`);
+                    $('.card-price').eq(i).html(`Price : $ ${new_products_catalog_2[i].price}`);
+                    $('.card-content').eq(i).html(`${new_products_catalog_2[i].content}`);
+                    $('.card-img').eq(i).html(`<img src="${new_products_catalog_2[i].picture}" class="card-img-top" alt="...">`);
+                };
+     }
+     });
+
+     // 가격 필터 기능 - 500달러 이하       
+     $('#inputGroupSelect02').on('change', function(){
+        if($('#inputGroupSelect02').val() == 2){
+            $('.container').html('');    //html싹 비우고.
+            
+        let new_products_catalog_2 = products_catalog.filter(function(a){    // 카탈로그 필터링 해서, new2 배열에 넣고.
+        return a.price <= 500 });
+        for (let i = 0; i < new_products_catalog_2.length; i++) {     //new2 배열 수만큼 반복해서 html생성하고
+             
+                $('.product_1').append(`
+           <div class="card" style="width: 20rem;">
+           <span class="card-img"><img src="/My_home_page/img2/apple.jpg" class="card-img-top card_img_align" alt="..."></span>
+           <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-price">100000</p>
+               <p class="card-content">Some quick example text to build on the card title and make up the bulk of
+                   the card's
+                   content.</p>
+           </div>
+           <div><a href="#" class="btn btn-primary p_button">Purchase</a></div>
+           </div>
+           `);
+            
+        }
+        
+        for (let i = 0; i < new_products_catalog_2.length; i++) {                           // new2 배열수 만큼 반복해서 html값 넣는다.
+                    $('.card-title').eq(i).html(`${new_products_catalog_2[i].name}`);
+                    $('.card-price').eq(i).html(`Price : $ ${new_products_catalog_2[i].price}`);
+                    $('.card-content').eq(i).html(`${new_products_catalog_2[i].content}`);
+                    $('.card-img').eq(i).html(`<img src="${new_products_catalog_2[i].picture}" class="card-img-top" alt="...">`);
+                };
+     }
+     });
+
+     // 가격 필터 기능 - 1000달러 이하       
+     $('#inputGroupSelect02').on('change', function(){
+        if($('#inputGroupSelect02').val() == 3){
+            $('.container').html('');    //html싹 비우고.
+            
+        let new_products_catalog_2 = products_catalog.filter(function(a){    // 카탈로그 필터링 해서, new2 배열에 넣고.
+        return a.price <= 1000 });
+        console.log(new_products_catalog_2)
+        for (let i = 0; i < new_products_catalog_2.length; i++) {     //new2 배열 수만큼 반복해서 html생성하고
+             
+                $('.product_1').append(`
+           <div class="card" style="width: 20rem;">
+           <span class="card-img"><img src="/My_home_page/img2/apple.jpg" class="card-img-top card_img_align" alt="..."></span>
+           <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-price">100000</p>
+               <p class="card-content">Some quick example text to build on the card title and make up the bulk of
+                   the card's
+                   content.</p>
+           </div>
+           <div><a href="#" class="btn btn-primary p_button">Purchase</a></div>
+           </div>
+           `);
+           
+        }
+        
+        for (let i = 0; i < new_products_catalog_2.length; i++) {                           // new2 배열수 만큼 반복해서 html값 넣는다.
+                    $('.card-title').eq(i).html(`${new_products_catalog_2[i].name}`);
+                    $('.card-price').eq(i).html(`Price : $ ${new_products_catalog_2[i].price}`);
+                    $('.card-content').eq(i).html(`${new_products_catalog_2[i].content}`);
+                    $('.card-img').eq(i).html(`<img src="${new_products_catalog_2[i].picture}" class="card-img-top" alt="...">`);
+                };
+     }
+     });
+        
+     
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

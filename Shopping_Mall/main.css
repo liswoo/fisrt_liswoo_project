@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap ;
 }
 
 .content_box {
@@ -8,4 +9,20 @@
     width: 100px;
     height: 100px;
 }
+.p_button {
+    margin: 15px;
+}
+.card_img_align {
+    max-height: 100px;
+}
+.input_group {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
 
+.input-group {
+    flex-basis: 500px;
+}
