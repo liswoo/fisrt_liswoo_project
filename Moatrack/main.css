@@ -1,0 +1,14 @@
+.main {
+    background-image: url(/CSS_up/moa_background.png);
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar-brand {
+    background-image: url('/CSS_up/atoz_top_logo.820c79ff.svg');
+    height: 45px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
