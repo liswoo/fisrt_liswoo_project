@@ -27,16 +27,15 @@
         </div>
     </div>
     <script>
+
         $(window).scroll(function () {
 
             let 높이 = $(window).scrollTop();
+            console.log(높이);
             let y = (-1 / 300) * 높이 + 7 / 3;
-            let z = (-1 / 3000) * 높이 + 3400 / 3000
-            for (let i = 0; i < 2; i++) {
-                $('.card_box').eq(i).css('opacity', y);
-                $('.card_box').eq(i).css('transform', `scale(${z})`);
-            }
-
+            let z = (-0.0033) * 높이 + 3.6;
+            $('.card_box').eq(0).css('opacity', y);
+            $('.card_box').eq(1).css('opacity', z);
 
         });
     </script>
