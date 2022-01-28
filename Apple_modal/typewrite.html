@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -11,25 +11,19 @@
 </head>
 
 <body>
-   
-
+    
     <script>
-        let a = {함수:function(){
-            console.log(this)
-        }, 데이터 : 'a', 이름 : 'woolis'}
-        a.함수()
-
-        function 그냥함수 (){
-            console.log(this)
+        function 기계 (){
+            this.이름 ='woo'
+            this.함수 = function(){console.log('dkss')}
         }
-        그냥함수();
 
-        
-    </script>
-    <script>
-        
+        var 오브젝트 = new 기계();
 
     </script>
+
+
+   
 </body>
 
 </html>
